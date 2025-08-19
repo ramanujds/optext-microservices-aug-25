@@ -27,4 +27,9 @@ public class CartApi {
     }
 
 
+    @PostMapping("/order")
+    public List<CartItem> placeOrder(){
+       return cartService.placeOrder();
+    }
+
 }

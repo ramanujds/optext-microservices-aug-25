@@ -31,6 +31,7 @@ public class ProductServiceImpl implements ProductService {
     }
 
     public Product getProductById(long id) {
+
         return productRepo.findById(id).orElseThrow(() -> new ItemNotFoundException("Item with id "+id+ " Not found"));
     }
 
